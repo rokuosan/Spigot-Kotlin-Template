@@ -6,7 +6,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 val javaVersion = findProperty("kotlinVersion")?:"17"
 val mainClassPath: String by project
 val minecraftVersion: String by project
-val name: String by project
+val pluginName = findProperty("name")?:"Template Plugin"
 val author: String by project
 val apiVersion: String by project
 val prefix: String by project
@@ -58,7 +58,7 @@ tasks.withType<ProcessResources>{
     mapOf(
         "version" to version,
         "mainClass" to mainClassPath,
-        "name" to name,
+        "name" to pluginName,
         "author" to author,
         "apiVersion" to apiVersion,
         "prefix" to prefix
