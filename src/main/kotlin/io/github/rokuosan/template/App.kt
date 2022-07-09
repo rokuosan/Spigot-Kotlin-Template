@@ -3,13 +3,14 @@
  */
 package io.github.rokuosan.template
 
-class App {
-    val greeting: String
-        get() {
-            return "Hello World!"
-        }
-}
+import org.bukkit.plugin.java.JavaPlugin
 
-fun main() {
-    println(App().greeting)
+class App: JavaPlugin() {
+    override fun onEnable() {
+        logger.info("Plugin enabled!")
+    }
+
+    override fun onDisable() {
+        logger.info("Plugin disabled!")
+    }
 }
