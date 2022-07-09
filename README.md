@@ -15,6 +15,7 @@ Change the package name in the following directory:
 ``/src/main/kotlin/``
 
 > **Note**
+> 
 > Default: ``io.github.rokuosan.template``
 
 ### 2. Edit ``gradle.properties``
